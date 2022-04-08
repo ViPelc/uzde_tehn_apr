@@ -1,2 +1,6 @@
-# Zemniekam ir govis, cûkas un vistas. Govîm un cûkâm ir pa 4 kâjâm, vistâm – 2. Izveidot programmu, kas prasa lietotâjam ievadît cûku, govju un vistu skaitu. Tiek aprçíinâts kopçjais kâju daudzums. Rezultâts tiek izvadîts konsolç.
+# Zemniekam ir govis, cï¿½kas un vistas. Govï¿½m un cï¿½kï¿½m ir pa 4 kï¿½jï¿½m, vistï¿½m ï¿½ 2. Izveidot programmu, kas prasa lietotï¿½jam ievadï¿½t cï¿½ku, govju un vistu skaitu. Tiek aprï¿½ï¿½inï¿½ts kopï¿½jais kï¿½ju daudzums. Rezultï¿½ts tiek izvadï¿½ts konsolï¿½.
 
+cow=int(input("Cik govis? "))
+pig=int(input("Cik cÅ«kas? "))
+chicken=int(input("Cik vistas? "))
+print("KopÄ“jais kÄju daudzums: ", pig*4+cow*4+chicken*2)
