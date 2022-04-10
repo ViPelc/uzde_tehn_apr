@@ -1,15 +1,19 @@
 # Atrast pozitīva skaitļa ciparu summu. Piemērs: 14214 => 12
 
 
-n = int(input("Ievadi skaitli: "))
-def getSum(n):
+n = int(input("Ievadi pozitīvu skaitli: "))
+while n<0:
+    print("Ievadītais skaitlis nav pozitīvs!")
+    n = int(input("Ievadi pozitīvu skaitli: "))
     
+def getSum(n):
+
     sum = 0
     while (n != 0):       
         sum = sum + (n % 10)
         n = n//10       
     return sum
-print(getSum(n))
+print("Skaitļu kopsumma ir: ", getSum(n))
 
 #def sumDigits(no):
 #    return 0 if no == 0 else int(no % 10) + sumDigits(int(no / 10)) 
