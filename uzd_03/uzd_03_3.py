@@ -3,31 +3,18 @@
 # tad skaitlis nav jāpievieno summai, 
 # bet, ja skaitlis ir četrciparu skaitlis un dalās ar 7, un dalās ar 1000, tad summas skaitīšana ir jāpārtrauc.
 
-# V2
-num = int(input("Ievadi pirmo skaitli: "))
-num2 = int(input("Ievadi otro skaitli: "))
-summa = 0
-for x in range(num, num2+1): 
-    if (len(str(x))==3) and (x%4==0) or (x%13==0) and (len(str(x))==3):
-        pass
-    elif(len(str(x))==4) and (x%7==0) and (x%1000==0): 
-        break 
-    else:
-        summa+=x
-print(summa)
-
-
-"""
-# V1
-nr = int(input("Ievadi pirmo skaitli: "))
-nr2 = int(input("Ievadi otro skaitli: "))
-summa = 0
-for x in range(nr, nr2+1, 1):
-    if (x%4==0) or (x%13==0) or (x>99):
+start = int(input("Start: "))
+end = int(input("End: "))
+sum = 0
+counter=0
+for i in range(start, end+1):
+    if len(str(i))==3 and i%13==0 or i%4==0 and len(str(i))==3:
         continue
-    elif(x>999) and (x%7==0) and (x%1000==0):
+    if len(str(i))==4 and i%7==0 and i%1000==0:
         break
     else:
-        summa+=x
-print(summa)
-"""
+        sum += i
+       # counter +=1
+       # print(i)
+print(f"Sum: {sum}")
+#print("Counter: ", counter)
